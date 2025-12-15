@@ -193,7 +193,7 @@ def nested_json(v: Any, no_rich: bool = False, **kwargs):
     if no_rich:
         print(json_str)
     else:
-        syntax = Syntax(json_str, "json", theme="monokai", line_numbers=True)
+        syntax = Syntax(json_str, "json", theme="monokai", line_numbers=True, word_wrap=True)
         console.print(Panel(syntax, title="JSON", border_style="blue"))
 
 
